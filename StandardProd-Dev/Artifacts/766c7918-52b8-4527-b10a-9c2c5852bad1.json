@@ -1,0 +1,14 @@
+{
+  "kind": "policyAssignment",
+  "properties": {
+    "displayName": "[Preview]: Access to App Services should be restricted",
+    "dependsOn": [],
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1a833ff1-d297-4a0f-9944-888428f8e0ff",
+    "parameters": {
+      "effect": {
+        "value": "AuditIfNotExists"
+      }
+    },
+    "resourceGroup": "ResourceGroup4"
+  }
+}
