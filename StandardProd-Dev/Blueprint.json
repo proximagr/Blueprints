@@ -1,0 +1,214 @@
+{
+  "properties": {
+    "targetScope": "subscription",
+    "parameters": {
+      "allowedvirtualmachineSKUs_listOfAllowedSKUs": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Allowed SKUs (Policy: Allowed virtual machine SKUs)",
+          "strongType": "VMSKUs"
+        },
+        "allowedValues": []
+      },
+      "allowedstorageaccountSKUs_listOfAllowedSKUs": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Allowed SKUs (Policy: Allowed storage account SKUs)",
+          "strongType": "StorageSKUs"
+        },
+        "allowedValues": []
+      },
+      "notallowedresourcetypes_listOfResourceTypesNotAllowed": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Not allowed resource types (Policy: Not allowed resource types)",
+          "strongType": "resourceTypes"
+        },
+        "allowedValues": []
+      },
+      "securetransfertostorageaccountsshouldbeenabled_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Effect (Policy: Secure transfer to storage accounts should be enabled)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Deny",
+          "Disabled"
+        ]
+      },
+      "allowedlocations_listOfAllowedLocations": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Allowed locations (Policy: Allowed locations)",
+          "strongType": "location"
+        },
+        "allowedValues": []
+      },
+      "allowedlocationsforresourcegroups_listOfAllowedLocations": {
+        "type": "array",
+        "metadata": {
+          "displayName": "Allowed locations (Policy: Allowed locations for resource groups)",
+          "strongType": "location"
+        },
+        "allowedValues": []
+      },
+      "addorreplaceatagonresourcegroups_tagValue": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Tag Value (Policy: Add or replace a tag on resource groups)"
+        },
+        "allowedValues": []
+      },
+      "deployaVNETandonesubnet_localPrefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "localPrefix (Deploy a VNET and one subnet)"
+        },
+        "allowedValues": []
+      },
+      "deployaVNETandonesubnet_addressSpaceVnet": {
+        "type": "string",
+        "metadata": {
+          "displayName": "addressSpaceVnet (Deploy a VNET and one subnet)"
+        },
+        "defaultValue": "10.0.0.0/16",
+        "allowedValues": []
+      },
+      "deployaVNETandonesubnet_addressSpaceSubnet": {
+        "type": "string",
+        "metadata": {
+          "displayName": "addressSpaceSubnet (Deploy a VNET and one subnet)"
+        },
+        "defaultValue": "10.0.0.0/24",
+        "allowedValues": []
+      },
+      "deployNSGfortheVNET_localPrefix": {
+        "type": "string",
+        "metadata": {
+          "displayName": "localPrefix (Deploy NSG for the VNET)"
+        },
+        "allowedValues": []
+      },
+      "auditunrestrictednetworkaccesstostorageaccounts_effect": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Effect (Policy: Audit unrestricted network access to storage accounts)"
+        },
+        "defaultValue": "Audit",
+        "allowedValues": [
+          "Audit",
+          "Disabled"
+        ]
+      },
+      "[Usergrouporapplicationname]:Reader_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Reader)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:CostManagementReader_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Cost Management Reader)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Contributor_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Contributor)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Reader_RoleAssignmentName_1": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Reader)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Reader_RoleAssignmentName_2": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Reader)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Contributor_RoleAssignmentName_1": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Contributor)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Contributor_RoleAssignmentName_2": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Contributor)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Reader_RoleAssignmentName_3": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Reader)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Owner_RoleAssignmentName": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Owner)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "[Usergrouporapplicationname]:Reader_RoleAssignmentName_4": {
+        "type": "array",
+        "metadata": {
+          "displayName": "[User group or application name] ([User group or application name] : Reader)",
+          "strongType": "PrincipalId"
+        }
+      },
+      "Organization_Name": {
+        "type": "string",
+        "metadata": {
+          "displayName": "Organization Name"
+        },
+        "allowedValues": []
+      }
+    },
+    "resourceGroups": {
+      "ResourceGroup": {
+        "name": "[concat(parameters('Organization_Name'),'-SharedRsrs-rg')]",
+        "metadata": {
+          "displayName": "Shared Resources Resource Group"
+        },
+        "dependsOn": []
+      },
+      "ResourceGroup2": {
+        "name": "[concat(parameters('Organization_Name'),'-VNet-rg')]",
+        "metadata": {
+          "displayName": "Network Service Resource Group"
+        },
+        "dependsOn": []
+      },
+      "ResourceGroup3": {
+        "name": "[concat(parameters('Organization_Name'),'-ProdApplication-rg')]",
+        "metadata": {
+          "displayName": "Production Application Resource Group"
+        },
+        "dependsOn": []
+      },
+      "ResourceGroup4": {
+        "name": "[concat(parameters('Organization_Name'),'-DevApplication-rg')]",
+        "metadata": {
+          "displayName": "Development Application Resource Group"
+        },
+        "dependsOn": []
+      }
+    }
+  }
+}
